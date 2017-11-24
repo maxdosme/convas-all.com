@@ -1,0 +1,50 @@
+<!doctype html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta charset="utf-8">
+<title>鼠标跟随图片特效</title>
+<link rel="stylesheet" type="text/css" href="style/lz.shuwon.css">
+<link rel="stylesheet" type="text/css" href="style/swiper.min.css">
+<style>
+	html,body{ width: 100%; height: 100%;}
+</style>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.smart3d.js"></script>		
+<script type="text/javascript">
+    $(function() {
+		$('#boxUl').smart3d({
+			vertical:true,
+			invertHorizontal: true, 
+			invertVertical: true,
+			horizontal:true,
+			firstStatic:false,
+			lastStatic:false
+		});
+    });
+    
+
+</script>
+<style>
+	html,body{ overflow: hidden;}
+	.boxs{ width: 100%; height: 100%; background: #0cc;}
+</style>
+		
+	</head>
+
+	<body>
+		
+
+	<ul id="boxUl" style="background:url(images/boxbanner1.jpg) center center no-repeat; background-size: cover;">
+		<li class="c"></li>
+		<!-- <li class="b"></li> -->
+		<li></li>
+	</ul>
+	<div class="boxs"></div>
+	<div class="boxs"></div>
+	<div class="boxs"></div>
+	</body>
+</html>
+
+
